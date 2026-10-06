@@ -1,0 +1,7 @@
+torch>=2.0
+torchvision>=0.15
+pandas>=2.0
+numpy>=1.24
+pydicom>=2.4
+matplotlib>=3.7
+Pillow>=10.0

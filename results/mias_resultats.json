@@ -1,0 +1,54 @@
+{
+  "protocole": "validation croisee 5 plis x 3 seeds, niveau patiente",
+  "dataset": "MIAS v1.21",
+  "n_images": 322,
+  "n_patients": 161,
+  "n_classes": 3,
+  "class_names": [
+    "F",
+    "G",
+    "D"
+  ],
+  "label_column": "BG",
+  "qwk": {
+    "baseline": {
+      "mean": 0.7875,
+      "std_interpli": 0.0607,
+      "std_interseed": 0.0235
+    },
+    "corn": {
+      "mean": 0.7923,
+      "std_interpli": 0.0595,
+      "std_interseed": 0.0204
+    }
+  },
+  "delta_apparie": {
+    "mean": 0.0048,
+    "ci95_n5_student": [
+      -0.0243,
+      0.0339
+    ],
+    "t": 0.458,
+    "df": 4,
+    "par_pli": [
+      -0.0197,
+      -0.005,
+      0.026,
+      0.0333,
+      -0.0107
+    ],
+    "corn_wins": "8/15",
+    "plis_gagnes": "2/5",
+    "test_signes_p": 1.0
+  },
+  "conclusion": "aucune difference significative (IC contient zero)",
+  "protocole_initial_errone": {
+    "delta": -0.0488,
+    "ci95": [
+      -0.1022,
+      0.0045
+    ],
+    "n_test": 80,
+    "cause": "test trop petit + variance inter-pli ignoree + selection sur max du QWK de validation"
+  }
+}
